@@ -1,0 +1,276 @@
+.services {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.services__container {
+  display: flex;
+  align-items: center;
+}
+
+.services-line {
+  width: 4px;
+  height: 40px;
+  background-color: #41f6d7;
+  border-radius: 0 2px 2px 0;
+}
+
+.services__title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
+}
+
+.services__title h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+
+.services__actions {
+  display: none;
+}
+
+.text-desktop {
+  display: none;
+}
+
+.services__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.services__text-block {
+  flex: 1;
+}
+
+.services__text-wrapper {
+  margin-left: 10px;
+}
+
+.services__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 16px 0;
+  color: #1b1c21;
+}
+
+.services__read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  color: #1b1c21;
+}
+
+.services__read-more:hover {
+  opacity: 0.7;
+}
+
+.services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.services__read-more.open .services__read-more-icon img {
+  transform: rotate(180deg);
+}
+
+.services__read-more-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1c21;
+}
+
+.services__image-block {
+  flex: 1;
+}
+
+.services__image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+#additionalText {
+  display: none;
+}
+
+#additionalText.show {
+  display: block;
+}
+
+.additional-text {
+  display: none;
+}
+
+.additional-text.show {
+  display: block;
+}
+
+/* ========== МОБИЛЬНАЯ ВЕРСИЯ (ДО 767px) ========== */
+@media (max-width: 767px) {
+  .services__text-wrapper {
+    margin-left: 0;
+  }
+  
+  .services__read-more {
+    margin-left: 0;
+  }
+  
+  #additionalText.show {
+    display: block;
+  }
+  
+  .additional-text {
+    display: none !important;
+  }
+}
+
+/* ========== ПЛАНШЕТНАЯ ВЕРСИЯ (768px - 1119px) ========== */
+@media (min-width: 768px) and (max-width: 1119px) {
+  .services__title {
+    padding-left: 24px;
+  }
+  
+  .services__content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 0 24px;
+  }
+
+  .services__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .services__text-wrapper {
+    margin-left: 0;
+  }
+
+  .services__read-more {
+    margin-left: 0;
+  }
+  
+  #additionalText.show {
+    display: block;
+  }
+  
+  .additional-text {
+    display: none !important;
+  }
+}
+
+/* ========== ДЕСКТОПНАЯ ВЕРСИЯ (1120px И ВЫШЕ) ========== */
+@media (min-width: 1120px) {
+  .services {
+    padding: 0;
+  }
+
+  .services__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 32px;
+    padding-left: 32px;
+  }
+
+  .services__title h1 {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .services__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+  }
+
+  .text-desktop {
+    display: block;
+    padding-right: 10px;
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+    color: #1b1c21;
+  }
+
+  .header-desktop {
+    background-color: #ff3e79;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  .header-desktop img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .services__content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 0 32px;
+  }
+
+  .services__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .services__text-wrapper {
+    margin-left: 0;
+  }
+
+  .services__read-more {
+    margin-left: 0;
+  }
+
+  #baseText {
+    display: block;
+  }
+
+  #additionalText {
+    display: block !important;
+  }
+
+  .additional-text {
+    display: none;
+  }
+
+  .additional-text.show {
+    display: block;
+    margin-top: 16px;
+  }
+}

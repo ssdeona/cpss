@@ -1,0 +1,105 @@
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: $primary-pink;
+  color: $white;
+  cursor: pointer;
+  transition: $transition-fast;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  &:hover {
+    opacity: 0.8;
+    filter: brightness(1.1);
+  }
+
+  img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+}
+
+.services__read-more {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+  background: none;
+  border: none;
+  font-size: $font-size-lg;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: opacity $transition-fast;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.open .services__read-more-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.services__read-more-icon {
+  display: inline-block;
+  transition: transform $transition-base;
+}
+
+.btn-order {
+  background: $primary-pink;
+  color: $white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: $font-size-base;
+  font-weight: 500;
+  transition: $transition-fast;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-xs;
+  min-width: 130px;
+  justify-self: end;
+
+  &:hover {
+    opacity: 0.8;
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+/* Адаптация для очень маленьких экранов */
+@media (max-width: 375px) {
+  .icon-btn {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .icon-btn {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.main-content {
+  margin-left: 320px;
+  width: calc(100% - 320px);
+  min-height: 100vh;
+  background-color: $gray-light;
+
+  @media (max-width: $desktop) {
+    margin-left: 0;
+    width: 100%;
+  }
+}

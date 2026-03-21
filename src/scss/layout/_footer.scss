@@ -1,0 +1,26 @@
+.footer {
+  margin-top: 60px;
+  padding: 20px 40px;
+  border-top: 1px solid $primary-cyan;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $font-size-base;
+  color: #666;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  a {
+    color: #666;
+    transition: $transition-fast;
+
+    &:hover {
+      color: $primary-cyan;
+    }
+  }
+}
