@@ -1,6 +1,7 @@
 .nav-menu {
   overflow-x: auto;
   margin: 20px 0;
+  padding: 0;
   scrollbar-width: thin;
   -webkit-overflow-scrolling: touch;
 }
@@ -54,7 +55,7 @@
   font-weight: 500;
 }
 
-/* ========== МОБИЛЬНАЯ ВЕРСИЯ (ДО 767px) ========== */
+/* Мобильная версия (до 767px) */
 @media (max-width: 767px) {
   .nav-menu {
     padding: 0;
@@ -67,14 +68,14 @@
   }
   
   .nav-menu__item--active {
-    margin-left: 20px;
+    margin-left: 0;
   }
 }
 
-/* ========== ПЛАНШЕТНАЯ ВЕРСИЯ (768px - 1119px) ========== */
+/* Планшетная версия (768px - 1119px) */
 @media (min-width: 768px) and (max-width: 1119px) {
   .nav-menu {
-    padding: 0 24px;
+    padding: 0;
     margin: 20px 0;
   }
 
@@ -88,15 +89,15 @@
   }
   
   .nav-menu__item--active {
-    margin-left: 20px;
+    margin-left: 0;
   }
 }
 
-/* ========== ДЕСКТОПНАЯ ВЕРСИЯ (1120px И ВЫШЕ) ========== */
+/* Десктопная версия (1120px и выше) */
 @media (min-width: 1120px) {
   .nav-menu {
     overflow-x: visible;
-    padding: 0 32px;
+    padding: 0;
     margin: 20px 0;
   }
 
@@ -112,6 +113,11 @@
   }
   
   .nav-menu__item--active {
-    margin-left: 20px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1120px) {
+  .nav-menu {
+    padding: 0 10px;
   }
 }

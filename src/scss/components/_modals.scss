@@ -181,29 +181,23 @@
 /* ========== МОБИЛЬНАЯ ВЕРСИЯ (до 767px) ========== */
 @media (max-width: 767px) {
   .modal-overlay {
-    background-color: $white;
-    backdrop-filter: none;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(248, 248, 248, 0.85);
+    backdrop-filter: blur(4px);
+    justify-content: flex-end;
   }
   
   .modal-container {
-    max-width: calc(100% - 32px);
+    max-width: 100%;
     width: 100%;
-    height: auto;
-    max-height: 90vh;
-    border-radius: 16px;
-    transform: scale(0.95);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    position: relative;
-    overflow-y: auto;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform $transition-slow;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
   }
   
   .modal-overlay.active .modal-container {
-    transform: scale(1);
-    opacity: 1;
+    transform: translateX(0);
   }
   
   .modal-content {
@@ -211,18 +205,17 @@
   }
   
   .modal-header {
-    padding-top: 36px;
+    padding-top: 40px;
     margin-bottom: 24px;
   }
   
   .modal-close-btn {
-    top: 12px;
-    left: 12px;
+    top: 0;
+    left: 0;
   }
   
   .modal-title-wrapper {
-    margin-top: 4px;
-    padding-left: 40px;
+    margin-top: 8px;
   }
   
   .modal-accent-line {
@@ -249,10 +242,6 @@
   .submit-area {
     justify-content: stretch;
   }
-  
-  .consent-text {
-    margin: 20px 0 24px 0;
-  }
 }
 
 /* ========== ПЛАНШЕТНАЯ ВЕРСИЯ ========== */
@@ -264,8 +253,6 @@
   
   .modal-container {
     max-width: 450px;
-    height: 100vh;
-    border-radius: 0;
   }
   
   .modal-header {
@@ -299,8 +286,6 @@
   
   .modal-container {
     max-width: 500px;
-    height: 100vh;
-    border-radius: 0;
   }
   
   .modal-header {

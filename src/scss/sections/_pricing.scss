@@ -254,6 +254,33 @@
   .pricing-slider .swiper-pagination-bullet-active {
     background-color: #b5b6bc;
   }
+  
+  .pricing-info-container {
+    padding: 0 16px;
+    margin-top: 20px;
+  }
+  
+  .pricing-info {
+    gap: 16px;
+  }
+  
+  .pricing-info__text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .commercial-offer {
+    font-size: 14px;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  .commercial-offer img {
+    flex-shrink: 0;
+  }
 }
 
 /* ========== ПЛАНШЕТНАЯ ВЕРСИЯ ========== */
@@ -278,6 +305,10 @@
     padding: 16px 30px;
   }
   
+  .pricing-info-container {
+    padding: 0 20px;
+  }
+  
   .pricing-info__text {
     width: 600px;
   }
@@ -291,6 +322,10 @@
   
   .pricing-slider {
     display: none !important;
+  }
+  
+  .pricing-info-container {
+    padding: 0 20px;
   }
   
   .pricing-info__text {
