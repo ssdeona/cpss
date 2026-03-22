@@ -270,7 +270,9 @@ ol {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(248, 248, 248, 0.85);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -282,10 +284,12 @@ ol {
     .sidebar-overlay {
       display: none !important; } }
 
-/* Мобильная версия - затемнение фона */
+/* Мобильная версия - белый фон без blur */
 @media (max-width: 767px) {
   .sidebar-overlay {
-    background-color: rgba(0, 0, 0, 0.5); } }
+    background-color: #ffffff;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none; } }
 
 .sidebar__top {
   display: flex;
@@ -1003,6 +1007,87 @@ ol {
     display: block;
     margin-top: 16px; } }
 
+.services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.services__read-more.open .services__read-more-icon {
+  transform: rotate(90deg); }
+
+.services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.services__read-more.open .services__read-more-icon {
+  transform: rotate(180deg); }
+
+.services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px; }
+
+.services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  display: block;
+  transition: transform 0.3s ease; }
+
+.services__read-more.open .services__read-more-icon {
+  transform: rotate(180deg); }
+
+.services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.services__read-more.open .services__read-more-icon {
+  transform: rotate(150deg); }
+
+.services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.services__read-more.open .services__read-more-icon {
+  transform: rotate(360deg); }
+
 .brands {
   margin: 0; }
 
@@ -1173,6 +1258,70 @@ ol {
     display: flex;
     margin-left: 20px; } }
 
+.brands__toggle .services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.brands__toggle .services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.brands__toggle.open .services__read-more-icon {
+  transform: rotate(90deg); }
+
+.brands__toggle .services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.brands__toggle .services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.brands__toggle.open .services__read-more-icon {
+  transform: rotate(180deg); }
+
+.brands__toggle .services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.brands__toggle .services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.brands__toggle.open .services__read-more-icon {
+  transform: rotate(150deg); }
+
+.brands__toggle .services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.brands__toggle .services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.brands__toggle.open .services__read-more-icon {
+  transform: rotate(360deg); }
+
 .repair {
   margin: 40px 0; }
 
@@ -1332,6 +1481,70 @@ ol {
     display: none; }
   .repair__toggle {
     display: flex; } }
+
+.repair__toggle .services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.repair__toggle .services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.repair__toggle.open .services__read-more-icon {
+  transform: rotate(90deg); }
+
+.repair__toggle .services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.repair__toggle .services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.repair__toggle.open .services__read-more-icon {
+  transform: rotate(180deg); }
+
+.repair__toggle .services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.repair__toggle .services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.repair__toggle.open .services__read-more-icon {
+  transform: rotate(150deg); }
+
+.repair__toggle .services__read-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.repair__toggle .services__read-more-icon img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease; }
+
+.repair__toggle.open .services__read-more-icon {
+  transform: rotate(360deg); }
 
 .pricing-section {
   margin: 0;
